@@ -4,7 +4,1411 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sodastream Easy Mix</title>
-   <style>@font-face{font-family:"HurmeGeometricSans3";src:local("HurmeGeometricSans3"),url(../fonts/HurmeGeometricSans3-Bold.woff) format("woff");font-weight:700}@font-face{font-family:"HurmeGeometricSans3";src:local("HurmeGeometricSans3"),url(../fonts/HurmeGeometricSans3-Regular.woff) format("woff");font-weight:400}@font-face{font-family:"HurmeGeometricSans3";src:local("HurmeGeometricSans3"),url(../fonts/HurmeGeometricSans3-Black.woff) format("woff");font-weight:900}@font-face{font-family:"HurmeGeometricSans3";src:local("HurmeGeometricSans3"),url(../fonts/HurmeGeometricSans3-Light.woff2) format("woff2");font-weight:300}#es-rc #es-rc-content{font-family:"HurmeGeometricSans3",sans-serif;font-weight:400;font-size:20px;line-height:1.2;color:#012349;background-color:#faf8f8;max-width:1100px;margin:auto;container:es-rc-content/inline-size;overflow:hidden;font-variant-ligatures:none}#es-rc #es-rc-content ::-moz-selection{background-color:#012349;color:#faf8f8}#es-rc #es-rc-content ::selection{background-color:#012349;color:#faf8f8}#es-rc #es-rc-content *{box-sizing:border-box}#es-rc #es-rc-content p{margin:0}#es-rc #es-rc-content img{width:100%;display:block;margin:0 auto}#es-rc #es-rc-content button{display:block}#es-rc #es-rc-content .es-section{padding:32px}#es-rc #es-rc-content .es-tm{display:inline-block;font-size:15px;vertical-align:top;margin-top:5px}#es-rc #es-rc-content .es-tm-headline{display:inline-block;font-size:18px;margin-top:5px}@container es-rc-content (min-width:800px){#es-rc #es-rc-content .es-tm-headline{font-size:32px}}#es-rc #es-rc-content .es-section-title{font-weight:700;font-size:32px;text-align:center;margin-block:16px;text-transform:uppercase}@container es-rc-content (min-width:660px){#es-rc #es-rc-content .es-section-title{font-size:48px}}#es-rc #es-rc-content .es-desktop{position:relative}@container es-rc-content (min-width:660px){#es-rc #es-rc-content .es-desktop{display:block}}#es-rc #es-rc-content .es-kv{display:flex;flex-direction:column;gap:24px;background-color:#faf8f8;padding:0;overflow:hidden;position:relative}#es-rc #es-rc-content .es-kv__top{padding:32px}#es-rc #es-rc-content .es-kv__logo{max-width:300px;margin-bottom:10px}#es-rc #es-rc-content .es-kv__title{text-align:center}#es-rc #es-rc-content .es-kv__title--headline{margin-bottom:10px;margin-top:25px;font-weight:700;font-size:30px}#es-rc #es-rc-content .es-kv__title--headline span{display:block;color:#e25d5f}#es-rc #es-rc-content .es-kv__title--bottomline{margin-bottom:25px;font-weight:700;font-size:20px}#es-rc #es-rc-content .es-kv__title-circle{justify-content:center;align-items:center;padding:20px;margin:0 auto;background:#e25d5f;color:#fff;font-size:20px;border-radius:50%;width:180px;height:180px;text-align:center}#es-rc #es-rc-content .es-kv__title-circle span{display:block;padding-top:1px;font-size:36px;font-weight:700}#es-rc #es-rc-content .es-kv__title-circle--desktop{display:none}#es-rc #es-rc-content .es-kv__title-circle--mobile{padding-top:40px}#es-rc #es-rc-content .es-kv__description-title{margin-bottom:15px;font-weight:700;text-align:center;font-size:25px}#es-rc #es-rc-content .es-kv__packshot{position:relative}#es-rc #es-rc-content .es-kv__packshot__img{max-width:400px}#es-rc #es-rc-content .es-kv__packshot__img--desktop{display:none}#es-rc #es-rc-content .es-kv__description{margin-block-start:30px;margin-block-end:30px}#es-rc #es-rc-content .es-kv__description__text{display:block;max-width:85%;margin:0 auto;font-size:20px;text-align:center}@container es-rc-content (min-width:440px){#es-rc #es-rc-content .es-kv__title--bottomline{font-size:18px}}@container es-rc-content (min-width:550px){#es-rc #es-rc-content .es-kv__title--headline{font-size:45px}#es-rc #es-rc-content .es-kv__title--bottomline{font-size:18px}#es-rc #es-rc-content .es-kv__description__text{font-size:18px;text-align:center}}@container es-rc-content (min-width:660px){#es-rc #es-rc-content .es-kv{justify-content:space-between;padding:40px 0;padding-bottom:0;overflow:hidden}#es-rc #es-rc-content .es-kv__top{display:flex;flex-direction:column;align-items:flex-start;justify-content:space-between;width:100%;padding-left:40px;padding-top:0;padding-bottom:70px}#es-rc #es-rc-content .es-kv__logo{margin:0;max-width:215px;margin-bottom:10px}#es-rc #es-rc-content .es-kv__title{text-align:left;margin-top:20px}#es-rc #es-rc-content .es-kv .es-desktop{width:100%}#es-rc #es-rc-content .es-kv__description{margin-block:30px;margin-block-start:24px;width:100%}#es-rc #es-rc-content .es-kv__description__text{text-align:center}#es-rc #es-rc-content .es-kv__packshot{align-items:end;position:relative;margin:0 auto;margin-right:0}#es-rc #es-rc-content .es-kv__packshot__img{margin:0;max-height:520px;position:relative;z-index:1}}@container es-rc-content (min-width:768px){#es-rc #es-rc-content .es-kv__top{padding-bottom:70px}#es-rc #es-rc-content .es-kv__packshot{position:relative}#es-rc #es-rc-content .es-kv__packshot__img{max-height:600px}}@container es-rc-content (min-width:880px){#es-rc #es-rc-content .es-kv__logo{max-width:250px;margin-bottom:16px}#es-rc #es-rc-content .es-kv__title--headline{margin-bottom:10px}#es-rc #es-rc-content .es-kv__title--bottomline{font-size:18px}#es-rc #es-rc-content .es-kv__packshot{margin-right:0}#es-rc #es-rc-content .es-kv__packshot__img{max-height:650px}#es-rc #es-rc-content .es-kv__description__text{font-size:20px;text-align:center}}#es-rc #es-rc-content .es-design{padding:30px 15px;padding-bottom:0;background:#faf8f8;position:relative;z-index:0}#es-rc #es-rc-content .es-design__title{margin-bottom:15px;font-size:25px;font-weight:700;text-align:center}#es-rc #es-rc-content .es-design__subtitle{display:block;margin:0 auto;margin-bottom:25px;text-align:center;font-size:20px}#es-rc #es-rc-content .es-design__container{margin-top:-1px;background:#faf8f8;display:flex;flex-direction:column;align-items:center;gap:30px}#es-rc #es-rc-content .es-design__container--desktop{display:none}#es-rc #es-rc-content .es-design__single{max-width:300px}#es-rc #es-rc-content .es-design__single-img{max-width:125px;width:auto}#es-rc #es-rc-content .es-design__single-subtitle{font-weight:700;text-align:center;font-size:20px}#es-rc #es-rc-content .es-design__description-img{margin-bottom:25px}#es-rc #es-rc-content .es-design__description-img--desktop{display:none}#es-rc #es-rc-content .es-design__new{padding-top:50px}#es-rc #es-rc-content .es-design__new-title{margin-bottom:20px;font-size:20px;font-weight:700;text-align:center}#es-rc #es-rc-content .es-design__new-description{margin-bottom:25px;font-size:20px;text-align:center}#es-rc #es-rc-content .es-slider{margin-block:32px;margin-bottom:0;margin-top:0}#es-rc #es-rc-content .es-slider .swiper-button-prev:after,#es-rc #es-rc-content .es-slider .swiper-rtl .swiper-button-next:after,#es-rc #es-rc-content .es-slider .swiper-button-next:after,#es-rc #es-rc-content .es-slider .swiper-rtl .swiper-button-next:after{content:""}#es-rc #es-rc-content .es-slider .swiper-button-next,#es-rc #es-rc-content .es-slider .swiper-button-prev{width:unset;height:unset;position:static;justify-content:unset;display:unset}#es-rc #es-rc-content .es-slider .es-swiper{position:relative;width:100%}#es-rc #es-rc-content .es-slider .es-swiper-wrapper{display:flex;transition:transform 0.5s ease}#es-rc #es-rc-content .es-slider__slide{flex:0 0 100%;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px;padding:32px}#es-rc #es-rc-content .es-slider__slide--1{color:#012349;z-index:0}@container es-rc-content (min-width:660px){#es-rc #es-rc-content .es-slider__slide{gap:48px;font-size:24px}}#es-rc #es-rc-content .es-steps{text-align:center;display:flex;flex-direction:column;gap:32px;background:linear-gradient(180deg,#faf8f8 35%,#012349 35%)}#es-rc #es-rc-content .es-steps__title{font-weight:700;font-size:25px;text-align:center;color:#012349;background-color:#faf8f8}#es-rc #es-rc-content .es-steps__steps__item__text{font-weight:600;font-size:20px;text-align:center}#es-rc #es-rc-content .es-steps__steps__container ::-moz-selection{color:#012349}#es-rc #es-rc-content .es-steps__steps__container ::selection{color:#012349}#es-rc #es-rc-content .es-steps__steps__title{font-weight:900;font-size:32px}#es-rc #es-rc-content .es-steps__steps__wrapper{display:flex;flex-direction:column;gap:24px;align-items:center}#es-rc #es-rc-content .es-steps__steps__item{display:flex;flex-direction:column;gap:8px;max-width:200px}#es-rc #es-rc-content .es-steps__steps__item__image{margin-bottom:10px;max-width:250px}@container es-rc-content (min-width:660px){#es-rc #es-rc-content .es-steps{background:linear-gradient(180deg,#faf8f8 50%,#012349 50%)}#es-rc #es-rc-content .es-steps__steps__title{font-size:34px}#es-rc #es-rc-content .es-steps__steps__wrapper{margin-bottom:30px;flex-direction:row;align-items:start;justify-content:space-evenly;-moz-column-gap:40px;column-gap:40px}#es-rc #es-rc-content .es-steps__steps__item{max-width:150px}}#es-rc #es-rc-content .es-easy-mix{padding:0 15px}#es-rc #es-rc-content .es-easy-mix__title{margin-bottom:30px;font-size:20px;font-weight:700;text-align:center}#es-rc #es-rc-content .es-easy-mix__img{margin-bottom:25px}#es-rc #es-rc-content .es-easy-mix__description{font-size:20px;text-align:center}#es-rc #es-rc-content .es-comfort{padding:30px 15px}#es-rc #es-rc-content .es-comfort__left{margin-bottom:25px}#es-rc #es-rc-content .es-comfort__left-title{margin-bottom:20px;font-size:20px;font-weight:700;text-align:center}#es-rc #es-rc-content .es-comfort__left-description{font-size:20px}#es-rc #es-rc-content .es-style__img{max-width:60%;margin-left:0}#es-rc #es-rc-content .es-style__left{max-width:310px;margin:0 auto}#es-rc #es-rc-content .es-style__inner{max-width:350px;margin:0 auto;position:relative;margin-bottom:20px}#es-rc #es-rc-content .es-style__wrapper{position:absolute;top:-20px;right:-106px}#es-rc #es-rc-content .es-style__img-title-group{position:relative}#es-rc #es-rc-content .es-style__title-img{margin-bottom:25px;max-width:30%}#es-rc #es-rc-content .es-style__img-title{position:absolute;top:55%;left:53%;transform:translate(-50%,-50%);color:#fff;font-size:12px;font-weight:700;text-align:center}#es-rc #es-rc-content .es-style__img-description{max-width:85%;margin:0 auto;margin-bottom:25px;font-size:20px;text-align:center}#es-rc #es-rc-content .es-style__img-description span{display:block;font-weight:700;font-size:25px}#es-rc #es-rc-content .es-eco{padding:30px 15px}#es-rc #es-rc-content .es-eco__bottom-title{margin-bottom:20px;font-size:20px;font-weight:700;text-align:center}#es-rc #es-rc-content .es-eco__subtitle{font-size:20px;text-align:center}#es-rc #es-rc-content .es-cross__container{display:flex;flex-direction:column;align-items:center;justify-content:center}#es-rc #es-rc-content .es-cross__single{padding:20px;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:20px}#es-rc #es-rc-content .es-cross__single--1{color:#fff;background-color:#002349}#es-rc #es-rc-content .es-cross__single--2{background-color:#f6c641}#es-rc #es-rc-content .es-cross__single--3{color:#fff;background-color:#e25d5f}#es-rc #es-rc-content .es-cross__single-title{font-weight:700;font-size:20px;text-align:center}#es-rc #es-rc-content .es-cross__single-title--blue{color:#002349}#es-rc #es-rc-content .es-cross__single-description{font-weight:400;font-size:20px;text-align:center}#es-rc #es-rc-content .es-cross__single-description--blue{color:#002349}#es-rc #es-rc-content .es-cross__img{max-width:55%;margin-bottom:15px;width:auto}#es-rc #es-rc-content .es-footer{position:relative;overflow:hidden;padding:30px 15px 0;background-position:center;min-height:400px}#es-rc #es-rc-content .es-footer .es-section-title{text-transform:none}#es-rc #es-rc-content .es-footer__hashtag{padding-top:20px;margin-top:0;font-size:20px;color:#fff;position:relative;z-index:3}#es-rc #es-rc-content .es-footer__hashtag--last{text-transform:none}#es-rc #es-rc-content .es-footer__subtitle{font-size:14px;color:#fff;font-weight:400;position:relative;z-index:3}#es-rc #es-rc-content .es-footer__inner{margin-top:-50px}#es-rc #es-rc-content .es-footer__inner::before{content:"";position:absolute;width:140%;height:400px;background-color:#002349;border-radius:50%;bottom:-30%;left:50%;transform:translateX(-50%)}#es-rc #es-rc-content .es-footer__logo-wrapper{background-color:#002349;padding-bottom:10px}@media screen and (min-width:430px){#es-rc #es-rc-content .es-footer{padding:30px 15px 25px}}@media screen and (min-width:550px){#es-rc #es-rc-content .es-style__img{max-width:80%}#es-rc #es-rc-content .es-style__wrapper{right:-155px}}@media screen and (min-width:600px){#es-rc #es-rc-content .es-footer__inner::before{bottom:-25%}#es-rc #es-rc-content .es-footer{padding:50px 15px 55px}}@media screen and (min-width:688px){#es-rc #es-rc-content .es-kv{padding-bottom:132px}#es-rc #es-rc-content .es-kv__title-circle--mobile{display:none}#es-rc #es-rc-content .es-kv__packshot{position:absolute;top:-160px;right:-30.5%}#es-rc #es-rc-content .es-kv__title-circle--desktop{display:block;position:absolute;padding-top:30px;bottom:-9%;left:-11%;z-index:3;width:160px;height:160px;font-size:15px}#es-rc #es-rc-content .es-kv__packshot__img{max-width:revert;max-height:550px}#es-rc #es-rc-content .es-kv__packshot__img--mobile{display:none}#es-rc #es-rc-content .es-kv__packshot__img--desktop{display:block}#es-rc #es-rc-content .es-footer__inner::before{bottom:-25%}#es-rc #es-rc-content .es-footer{padding:10px 15px 55px}}@media screen and (min-width:768px){#es-rc #es-rc-content .es-kv__packshot{position:absolute;top:-190px;right:-30.5%}#es-rc #es-rc-content .es-kv__title-circle span{padding-top:15px}#es-rc #es-rc-content .es-kv__title-circle{position:absolute;bottom:-2.4%;right:77.3%;z-index:3}#es-rc #es-rc-content .es-kv__packshot__img{max-width:revert;max-height:675px}#es-rc #es-rc-content .es-kv__title--bottomline{margin-bottom:75px}#es-rc #es-rc-content .es-kv__packshot__img--mobile{display:none}#es-rc #es-rc-content .es-kv__packshot__img--desktop{display:block}#es-rc #es-rc-content .es-design{background-color:#faf8f8;padding-right:0;padding-left:0}#es-rc #es-rc-content .es-design__title,#es-rc #es-rc-content .es-design__subtitle{padding-right:15px;padding-left:15px}#es-rc #es-rc-content .es-design__container{display:none}#es-rc #es-rc-content .es-design__description-img--mobile{display:none}#es-rc #es-rc-content .es-design__description-img--desktop{display:block}#es-rc #es-rc-content .es-design__single{max-width:230px;display:flex;align-items:center}#es-rc #es-rc-content .es-design__single-subtitle{font-size:14px;text-align:right}#es-rc #es-rc-content .es-design__single-subtitle--1{position:absolute;top:20.5%;left:6%}#es-rc #es-rc-content .es-style__img-title{left:55%}#es-rc #es-rc-content .es-design__single-subtitle--2{position:absolute;top:25%;left:70%;flex-direction:row-reverse}#es-rc #es-rc-content .es-design__single-subtitle--3{position:absolute;top:31.5%;left:1.5%}#es-rc #es-rc-content .es-design__single-subtitle--4{position:absolute;top:39%;left:70%;flex-direction:row-reverse}#es-rc #es-rc-content .es-design__single-subtitle--5{position:absolute;top:43%;left:8%}#es-rc #es-rc-content .es-design__single-subtitle--2 p{text-align:left}#es-rc #es-rc-content .es-design__single-subtitle--4 p{text-align:left}#es-rc #es-rc-content .es-design__description-img{width:50%}#es-rc #es-rc-content .es-design__container{margin-top:20px;flex-direction:column;justify-content:space-around}#es-rc #es-rc-content .es-design__container--desktop{display:flex;margin-top:-40px;row-gap:60px}#es-rc #es-rc-content .es-design__new{position:relative}#es-rc #es-rc-content .es-design__new-wrapper{position:absolute;top:24%;left:5%;transform:translate(-5%,0%);width:40%}#es-rc #es-rc-content .es-design__new-title{text-align:left}#es-rc #es-rc-content .es-design__new-description{text-align:left}#es-rc #es-rc-content .es-style__left{display:flex;flex-flow:row;max-width:750px;margin-left:0}#es-rc #es-rc-content .es-style__inner{max-width:67%;margin-left:-10px}#es-rc #es-rc-content .es-style__img{max-width:516px;z-index:3;position:relative}#es-rc #es-rc-content .es-style__img-description{padding-left:36px;max-width:300px;margin-left:-25px;margin-bottom:45px;align-self:flex-end;text-align:left}#es-rc #es-rc-content .es-style__title-img{max-width:60%}#es-rc #es-rc-content .es-style__wrapper{top:17%;right:-53.5%}#es-rc #es-rc-content .es-style__img-title-group{margin-right:revert;margin-top:-25px}#es-rc #es-rc-content .es-style__img-title{font-size:22px}#es-rc #es-rc-content .es-eco{padding-left:20px;padding-right:20px}#es-rc #es-rc-content .es-eco__bottom-title{font-weight:700;font-size:20px;text-align:center}#es-rc #es-rc-content .es-slider{position:relative;z-index:0}#es-rc #es-rc-content .es-slider__slide--1{position:relative}#es-rc #es-rc-content .es-cross__container{display:flex;flex-direction:row;justify-content:center;align-items:stretch;gap:0}#es-rc #es-rc-content .es-cross__single-title{min-height:45px}#es-rc #es-rc-content .es-cross__single-description{min-height:175px}#es-rc #es-rc-content .es-cross__single{max-width:33.3%;padding-top:40px;padding-bottom:20px;row-gap:5px}#es-rc #es-rc-content .es-steps__steps__item__text{font-size:20px}#es-rc #es-rc-content .es-steps__steps__item{max-width:200px}#es-rc #es-rc-content .es-footer{background-image:url(../images/bottles-d.png);background-size:cover;background-repeat:no-repeat;background-color:#faf8f8;min-height:530px}#es-rc #es-rc-content .es-footer__inner{margin-top:150px;max-width:85%;margin-left:auto;margin-right:auto}#es-rc #es-rc-content .es-footer__inner::before{display:none}#es-rc #es-rc-content .es-footer__bottles{display:none}#es-rc #es-rc-content .es-footer{padding:150px 15px 55px}}@media screen and (min-width:800px){#es-rc #es-rc-content .es-kv__title--headline{margin-bottom:50px;font-size:50px}#es-rc #es-rc-content .es-kv__title--bottomline{font-size:20px}#es-rc #es-rc-content .es-kv__packshot{right:-23.5%}#es-rc #es-rc-content .es-kv__title-circle{bottom:-3%;right:revert;left:-54px}#es-rc #es-rc-content .es-design__container--desktop{row-gap:88px}#es-rc #es-rc-content .es-design__single-subtitle--1{position:absolute;top:17.5%;left:10%}#es-rc #es-rc-content .es-design__single-subtitle--2{position:absolute;top:21%;left:70%;flex-direction:row-reverse}#es-rc #es-rc-content .es-design__single-subtitle--3{position:absolute;top:28.5%;left:.5%}#es-rc #es-rc-content .es-design__single-subtitle--4{position:absolute;top:36%;left:71%;flex-direction:row-reverse}#es-rc #es-rc-content .es-design__single-subtitle--5{position:absolute;top:43%;left:13%}}@media screen and (min-width:895px){#es-rc #es-rc-content .es-design__single-subtitle--5{position:absolute;top:41%;left:13%}#es-rc #es-rc-content .es-design__new-title{font-size:30px}#es-rc #es-rc-content .es-design__new-description{font-size:23px}}@media screen and (min-width:980px){#es-rc #es-rc-content .es-design__single-subtitle--1{position:absolute;top:16.5%;left:14%}#es-rc #es-rc-content .es-design__single-subtitle--2{position:absolute;top:21%;left:70%;flex-direction:row-reverse}#es-rc #es-rc-content .es-design__single-subtitle--3{position:absolute;top:28.5%;left:3.5%}#es-rc #es-rc-content .es-design__single-subtitle--4{position:absolute;top:36%;left:71%;flex-direction:row-reverse}#es-rc #es-rc-content .es-design__single-subtitle--5{position:absolute;top:40%;left:14%}#es-rc #es-rc-content .es-footer__hashtag{font-size:32px}#es-rc #es-rc-content .es-footer{padding:300px 15px 55px}}@media screen and (min-width:1100px){#es-rc #es-rc-content .es-kv{position:relative;padding-bottom:87px}#es-rc #es-rc-content .es-kv__title--headline{margin-bottom:25px;font-size:60px}#es-rc #es-rc-content .es-kv__title--bottomline{font-size:25px}#es-rc #es-rc-content .es-kv__logo{max-width:290px}#es-rc #es-rc-content .es-kv__title-circle{bottom:2%;left:-17%;right:auto;z-index:5}#es-rc #es-rc-content .es-kv__packshot{position:absolute;top:-160px;right:-14.5%}#es-rc #es-rc-content .es-kv__packshot__img{max-height:730px}#es-rc #es-rc-content .es-kv__packshot__img--mobile{display:none}#es-rc #es-rc-content .es-kv__packshot__img--desktop{left:-50px;transform:scale(1.1);top:-50px;display:block;display:block}#es-rc #es-rc-content .es-kv__title{text-align:left;margin-top:10px;max-width:400px;margin-bottom:100px}#es-rc #es-rc-content .es-style__img-title{left:57%}#es-rc #es-rc-content .es-cross__single-description{min-height:165px}#es-rc #es-rc-content .es-cross__single-title{min-height:25px}#es-rc #es-rc-content .es-design__container--desktop{row-gap:100px}#es-rc #es-rc-content .es-design__single-subtitle{font-size:20px}#es-rc #es-rc-content .es-design__single-subtitle--1{position:absolute;top:16.5%;left:14.5%;text-align:right}#es-rc #es-rc-content .es-design__single-subtitle--2{position:absolute;top:21%;left:71%;text-align:left}#es-rc #es-rc-content .es-design__single-subtitle--3{position:absolute;top:29%;left:5%;text-align:right}#es-rc #es-rc-content .es-design__single-subtitle--4{position:absolute;top:36.5%;left:71%;text-align:left}#es-rc #es-rc-content .es-design__single-subtitle--5{position:absolute;top:39.5%;left:10%;text-align:right}#es-rc #es-rc-content .es-kv__description-title,#es-rc #es-rc-content .es-design__title,#es-rc #es-rc-content .es-steps__title,#es-rc #es-rc-content .es-eco__bottom-title,#es-rc #es-rc-content .es-footer__hashtag{font-size:32px}#es-rc #es-rc-content .es-eco__subtitle{margin-bottom:30px}#es-rc #es-rc-content .es-steps__steps__item{max-width:285px}#es-rc #es-rc-content .es-easy-mix__title{font-size:32px}#es-rc #es-rc-content .es-easy-mix__container{display:flex;-moz-column-gap:50px;column-gap:50px}#es-rc #es-rc-content .es-easy-mix__description{text-align:left}#es-rc #es-rc-content .es-easy-mix__right,#es-rc #es-rc-content .es-easy-mix__left{width:50%}#es-rc #es-rc-content .es-comfort__left-title{font-size:32px}#es-rc #es-rc-content .es-comfort__container{display:flex;-moz-column-gap:50px;column-gap:50px;align-items:center}#es-rc #es-rc-content .es-comfort__right,#es-rc #es-rc-content .es-comfort__left{width:50%}#es-rc #es-rc-content .es-footer{min-height:550px;background-position:top;padding-bottom:46px;padding:30px 15px 55px}#es-rc #es-rc-content .es-footer__inner{max-width:100%;margin-top:330px;max-width:100%}#es-rc #es-rc-content .es-footer__hashtag{font-size:32px;margin-bottom:45px}#es-rc #es-rc-content .es-footer__subtitle{max-width:90%;margin:0 auto}#es-rc #es-rc-content .es-style__inner{max-width:67%}#es-rc #es-rc-content .es-style__left{max-width:revert}#es-rc #es-rc-content .es-style__img{z-index:3;position:relative;min-width:100%;max-width:100%}#es-rc #es-rc-content .es-style__img-title{font-size:32px}#es-rc #es-rc-content .es-style__title-img{max-width:82%}#es-rc #es-rc-content .es-style__img-description span{font-size:30px}#es-rc #es-rc-content .es-style__wrapper{right:-48.5%;top:14%}#es-rc #es-rc-content .es-style__img-title-group{margin-right:revert}#es-rc #es-rc-content .es-style__img-description{padding-left:0;margin-bottom:120px;margin-left:0;font-size:24px;max-width:503px}#es-rc #es-rc-content .es-design__new-wrapper{top:26%;left:6%}#es-rc #es-rc-content .es-design__new-title{font-size:36px}#es-rc #es-rc-content .es-design__new-description{max-width:355px}#es-rc #es-rc-content .es-steps__steps__item__text{font-size:20px}}</style>
+    <style>
+      @font-face {
+        font-family: "HurmeGeometricSans3";
+        src:
+          local("HurmeGeometricSans3"),
+          url(./fonts/HurmeGeometricSans3-Bold.woff) format("woff");
+        font-weight: 700;
+      }
+      @font-face {
+        font-family: "HurmeGeometricSans3";
+        src:
+          local("HurmeGeometricSans3"),
+          url(./fonts/HurmeGeometricSans3-Regular.woff) format("woff");
+        font-weight: 400;
+      }
+      @font-face {
+        font-family: "HurmeGeometricSans3";
+        src:
+          local("HurmeGeometricSans3"),
+          url(./fonts/HurmeGeometricSans3-Black.woff) format("woff");
+        font-weight: 900;
+      }
+      @font-face {
+        font-family: "HurmeGeometricSans3";
+        src:
+          local("HurmeGeometricSans3"),
+          url(./fonts/HurmeGeometricSans3-Light.woff2) format("woff2");
+        font-weight: 300;
+      }
+      #es-rc #es-rc-content {
+        font-family: "HurmeGeometricSans3", sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.2;
+        color: #012349;
+        background-color: #faf8f8;
+        max-width: 1100px;
+        margin: auto;
+        container: es-rc-content/inline-size;
+        overflow: hidden;
+        font-variant-ligatures: none;
+      }
+      #es-rc #es-rc-content ::-moz-selection {
+        background-color: #012349;
+        color: #faf8f8;
+      }
+      #es-rc #es-rc-content ::selection {
+        background-color: #012349;
+        color: #faf8f8;
+      }
+      #es-rc #es-rc-content * {
+        box-sizing: border-box;
+      }
+      #es-rc #es-rc-content p {
+        margin: 0;
+      }
+      #es-rc #es-rc-content img {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+      }
+      #es-rc #es-rc-content button {
+        display: block;
+      }
+      #es-rc #es-rc-content .es-section {
+        padding: 32px;
+      }
+      #es-rc #es-rc-content .es-tm {
+        display: inline-block;
+        font-size: 15px;
+        vertical-align: top;
+        margin-top: 5px;
+      }
+      #es-rc #es-rc-content .es-tm-headline {
+        display: inline-block;
+        font-size: 18px;
+        margin-top: 5px;
+      }
+      @container es-rc-content (min-width:800px) {
+        #es-rc #es-rc-content .es-tm-headline {
+          font-size: 32px;
+        }
+      }
+      #es-rc #es-rc-content .es-section-title {
+        font-weight: 700;
+        font-size: 32px;
+        text-align: center;
+        margin-block: 16px;
+        text-transform: uppercase;
+      }
+      @container es-rc-content (min-width:660px) {
+        #es-rc #es-rc-content .es-section-title {
+          font-size: 48px;
+        }
+      }
+      #es-rc #es-rc-content .es-desktop {
+        position: relative;
+      }
+      @container es-rc-content (min-width:660px) {
+        #es-rc #es-rc-content .es-desktop {
+          display: block;
+        }
+      }
+      #es-rc #es-rc-content .es-kv {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        background-color: #faf8f8;
+        padding: 0;
+        overflow: hidden;
+        position: relative;
+      }
+      #es-rc #es-rc-content .es-kv__top {
+        padding: 32px;
+      }
+      #es-rc #es-rc-content .es-kv__logo {
+        max-width: 300px;
+        margin-bottom: 10px;
+      }
+      #es-rc #es-rc-content .es-kv__title {
+        text-align: center;
+      }
+      #es-rc #es-rc-content .es-kv__title--headline {
+        margin-bottom: 10px;
+        margin-top: 25px;
+        font-weight: 700;
+        font-size: 30px;
+      }
+      #es-rc #es-rc-content .es-kv__title--headline span {
+        display: block;
+        color: #e25d5f;
+      }
+      #es-rc #es-rc-content .es-kv__title--bottomline {
+        margin-bottom: 25px;
+        font-weight: 700;
+        font-size: 20px;
+      }
+      #es-rc #es-rc-content .es-kv__title-circle {
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        margin: 0 auto;
+        background: #e25d5f;
+        color: #fff;
+        font-size: 20px;
+        border-radius: 50%;
+        width: 180px;
+        height: 180px;
+        text-align: center;
+      }
+      #es-rc #es-rc-content .es-kv__title-circle span {
+        display: block;
+        padding-top: 13px;
+        font-size: 36px;
+        font-weight: 700;
+      }
+      #es-rc #es-rc-content .es-kv__title-circle--desktop {
+        display: none;
+      }
+      #es-rc #es-rc-content .es-kv__description-title {
+        margin-bottom: 15px;
+        font-weight: 700;
+        text-align: center;
+        font-size: 25px;
+      }
+      #es-rc #es-rc-content .es-kv__packshot {
+        position: relative;
+      }
+      #es-rc #es-rc-content .es-kv__packshot__img {
+        max-width: 400px;
+      }
+      #es-rc #es-rc-content .es-kv__packshot__img--desktop {
+        display: none;
+      }
+      #es-rc #es-rc-content .es-kv__description {
+        margin-block-start: 30px;
+        margin-block-end: 30px;
+      }
+      #es-rc #es-rc-content .es-kv__description__text {
+        display: block;
+        max-width: 85%;
+        margin: 0 auto;
+        font-size: 20px;
+        text-align: center;
+      }
+      @container es-rc-content (min-width:440px) {
+        #es-rc #es-rc-content .es-kv__title--bottomline {
+          font-size: 18px;
+        }
+      }
+      @container es-rc-content (min-width:550px) {
+        #es-rc #es-rc-content .es-kv__title--headline {
+          font-size: 45px;
+        }
+        #es-rc #es-rc-content .es-kv__title--bottomline {
+          font-size: 18px;
+        }
+        #es-rc #es-rc-content .es-kv__description__text {
+          font-size: 18px;
+          text-align: center;
+        }
+      }
+      @container es-rc-content (min-width:660px) {
+        #es-rc #es-rc-content .es-kv {
+          justify-content: space-between;
+          padding: 40px 0;
+          padding-bottom: 0;
+          overflow: hidden;
+        }
+        #es-rc #es-rc-content .es-kv__top {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: space-between;
+          width: 100%;
+          padding-left: 40px;
+          padding-top: 0;
+          padding-bottom: 0px;
+        }
+        #es-rc #es-rc-content .es-kv__logo {
+          margin: 0;
+          max-width: 215px;
+          margin-bottom: 10px;
+        }
+        #es-rc #es-rc-content .es-kv__title {
+          text-align: left;
+          margin-top: 20px;
+        }
+        #es-rc #es-rc-content .es-kv .es-desktop {
+          width: 100%;
+        }
+        #es-rc #es-rc-content .es-kv__description {
+          margin-block: 30px;
+          margin-block-start: 24px;
+          width: 100%;
+        }
+        #es-rc #es-rc-content .es-kv__description__text {
+          text-align: center;
+        }
+        #es-rc #es-rc-content .es-kv__packshot {
+          align-items: end;
+          position: relative;
+          margin: 0 auto;
+          margin-right: 0;
+        }
+        #es-rc #es-rc-content .es-kv__packshot__img {
+          margin: 0;
+          max-height: 520px;
+          position: relative;
+          z-index: 1;
+        }
+      }
+      @container es-rc-content (min-width:768px) {
+        #es-rc #es-rc-content .es-kv__top {
+          padding-bottom: 70px;
+        }
+        #es-rc #es-rc-content .es-kv__packshot {
+          position: relative;
+        }
+        #es-rc #es-rc-content .es-kv__packshot__img {
+          max-height: 600px;
+        }
+      }
+      @container es-rc-content (min-width:880px) {
+        #es-rc #es-rc-content .es-kv__logo {
+          max-width: 250px;
+          margin-bottom: 16px;
+        }
+        #es-rc #es-rc-content .es-kv__title--headline {
+          margin-bottom: 10px;
+        }
+        #es-rc #es-rc-content .es-kv__title--bottomline {
+          font-size: 18px;
+        }
+        #es-rc #es-rc-content .es-kv__packshot {
+          margin-right: 0;
+        }
+        #es-rc #es-rc-content .es-kv__packshot__img {
+          max-height: 650px;
+        }
+        #es-rc #es-rc-content .es-kv__description__text {
+          font-size: 20px;
+          text-align: center;
+        }
+      }
+      #es-rc #es-rc-content .es-design {
+        padding: 30px 15px;
+        padding-bottom: 0;
+        background: #faf8f8;
+        position: relative;
+        z-index: 0;
+      }
+      #es-rc #es-rc-content .es-design__title {
+        margin-bottom: 15px;
+        font-size: 25px;
+        font-weight: 700;
+        text-align: center;
+      }
+      #es-rc #es-rc-content .es-design__description-img--mobile {
+        width: 50%;
+      }
+      #es-rc #es-rc-content .es-design__subtitle {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 25px;
+        text-align: center;
+        font-size: 20px;
+      }
+      #es-rc #es-rc-content .es-design__container {
+        margin-top: -1px;
+        background: #faf8f8;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+      }
+      #es-rc #es-rc-content .es-design__container--desktop {
+        display: none;
+      }
+      #es-rc #es-rc-content .es-design__single {
+        max-width: 300px;
+      }
+      #es-rc #es-rc-content .es-design__single-img {
+        max-width: 125px;
+        width: auto;
+      }
+      #es-rc #es-rc-content .es-design__single-subtitle {
+        font-weight: 700;
+        text-align: center;
+        font-size: 20px;
+      }
+      #es-rc #es-rc-content .es-design__description-img {
+        margin-bottom: 25px;
+      }
+      #es-rc #es-rc-content .es-design__description-img--desktop {
+        display: none;
+      }
+      #es-rc #es-rc-content .es-design__new {
+        padding-top: 50px;
+      }
+      #es-rc #es-rc-content .es-design__new-title {
+        margin-bottom: 20px;
+        font-size: 25px;
+        font-weight: 700;
+        text-align: center;
+      }
+
+      #es-rc #es-rc-content .es-design__nowrap {
+        white-space: nowrap;
+      }
+
+      #es-rc #es-rc-content .es-design__new-description {
+        margin-bottom: 25px;
+        font-size: 20px;
+        text-align: center;
+      }
+      #es-rc #es-rc-content .es-slider {
+        margin-block: 32px;
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+      #es-rc #es-rc-content .es-slider .swiper-button-prev:after,
+      #es-rc #es-rc-content .es-slider .swiper-rtl .swiper-button-next:after,
+      #es-rc #es-rc-content .es-slider .swiper-button-next:after,
+      #es-rc #es-rc-content .es-slider .swiper-rtl .swiper-button-next:after {
+        content: "";
+      }
+      #es-rc #es-rc-content .es-slider .swiper-button-next,
+      #es-rc #es-rc-content .es-slider .swiper-button-prev {
+        width: unset;
+        height: unset;
+        position: static;
+        justify-content: unset;
+        display: unset;
+      }
+      #es-rc #es-rc-content .es-slider .es-swiper {
+        position: relative;
+        width: 100%;
+      }
+      #es-rc #es-rc-content .es-slider .es-swiper-wrapper {
+        display: flex;
+        transition: transform 0.5s ease;
+      }
+      #es-rc #es-rc-content .es-slider__slide {
+        flex: 0 0 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        padding: 32px;
+      }
+      #es-rc #es-rc-content .es-slider__slide--1 {
+        color: #012349;
+        z-index: 0;
+      }
+      @container es-rc-content (min-width:660px) {
+        #es-rc #es-rc-content .es-slider__slide {
+          gap: 48px;
+          font-size: 24px;
+        }
+      }
+      #es-rc #es-rc-content .es-steps {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        background: linear-gradient(180deg, #faf8f8 35%, #012349 35%);
+      }
+      #es-rc #es-rc-content .es-steps__title {
+        font-weight: 700;
+        font-size: 25px;
+        text-align: center;
+        color: #012349;
+        background-color: #faf8f8;
+      }
+      #es-rc #es-rc-content .es-steps__steps__item__text {
+        font-weight: 600;
+        font-size: 20px;
+        text-align: center;
+      }
+      #es-rc #es-rc-content .es-steps__steps__container ::-moz-selection {
+        color: #012349;
+      }
+      #es-rc #es-rc-content .es-steps__steps__container ::selection {
+        color: #012349;
+      }
+      #es-rc #es-rc-content .es-steps__steps__title {
+        font-weight: 900;
+        font-size: 32px;
+      }
+      #es-rc #es-rc-content .es-steps__steps__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+      }
+      #es-rc #es-rc-content .es-steps__steps__item {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        max-width: 200px;
+      }
+      #es-rc #es-rc-content .es-steps__steps__item__image {
+        margin-bottom: 10px;
+        max-width: 250px;
+      }
+      @container es-rc-content (min-width:660px) {
+        #es-rc #es-rc-content .es-steps {
+          background: linear-gradient(180deg, #faf8f8 50%, #012349 50%);
+        }
+        #es-rc #es-rc-content .es-steps__steps__title {
+          font-size: 34px;
+        }
+        #es-rc #es-rc-content .es-steps__steps__wrapper {
+          margin-bottom: 30px;
+          flex-direction: row;
+          align-items: start;
+          justify-content: space-evenly;
+          -moz-column-gap: 40px;
+          column-gap: 40px;
+        }
+        #es-rc #es-rc-content .es-steps__steps__item {
+          max-width: 150px;
+        }
+      }
+      #es-rc #es-rc-content .es-easy-mix {
+        padding: 0 15px;
+      }
+      #es-rc #es-rc-content .es-easy-mix__title {
+        margin-bottom: 30px;
+        font-size: 25px;
+        font-weight: 700;
+        text-align: center;
+      }
+      #es-rc #es-rc-content .es-easy-mix__img {
+        margin-bottom: 25px;
+      }
+      #es-rc #es-rc-content .es-easy-mix__description {
+        font-size: 20px;
+        text-align: center;
+      }
+      #es-rc #es-rc-content .es-comfort {
+        padding: 30px 15px;
+      }
+      #es-rc #es-rc-content .es-comfort__left {
+        margin-bottom: 25px;
+      }
+      #es-rc #es-rc-content .es-comfort__left-title {
+        margin-bottom: 20px;
+        font-size: 25px;
+        font-weight: 700;
+        text-align: center;
+      }
+      #es-rc #es-rc-content .es-comfort__left-description {
+        font-size: 20px;
+      }
+      #es-rc #es-rc-content .es-style__img {
+        max-width: 60%;
+        margin-left: 2px;
+      }
+      #es-rc #es-rc-content .es-style__left {
+        max-width: 310px;
+        margin: 0 auto;
+      }
+      #es-rc #es-rc-content .es-style__inner {
+        max-width: 350px;
+        margin: 0 auto;
+        position: relative;
+        margin-bottom: 20px;
+      }
+      #es-rc #es-rc-content .es-style__wrapper {
+        position: absolute;
+        top: -20px;
+        right: -106px;
+      }
+      #es-rc #es-rc-content .es-style__img-title-group {
+        position: relative;
+      }
+      #es-rc #es-rc-content .es-style__title-img {
+        margin-top: 25px;
+        max-width: 30%;
+      }
+      #es-rc #es-rc-content .es-style__img-title {
+        position: absolute;
+        top: 55%;
+        left: 53%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        font-size: 12px;
+        font-weight: 700;
+        text-align: center;
+      }
+      #es-rc #es-rc-content .es-style__img-description {
+        max-width: 85%;
+        margin: 0 auto;
+        margin-bottom: 25px;
+        font-size: 20px;
+        text-align: center;
+      }
+      #es-rc #es-rc-content .es-style__img-description span {
+        display: block;
+        font-weight: 700;
+        font-size: 25px;
+      }
+      #es-rc #es-rc-content .es-eco {
+        padding: 30px 15px;
+      }
+      #es-rc #es-rc-content .es-eco__bottom-title {
+        margin-bottom: 20px;
+        font-size: 25px;
+        font-weight: 700;
+        text-align: center;
+      }
+      #es-rc #es-rc-content .es-eco__subtitle {
+        font-size: 20px;
+        text-align: center;
+      }
+      #es-rc #es-rc-content .es-cross__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      #es-rc #es-rc-content .es-cross__single {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+      }
+      #es-rc #es-rc-content .es-cross__single--1 {
+        color: #fff;
+        background-color: #002349;
+      }
+      #es-rc #es-rc-content .es-cross__single--2 {
+        background-color: #f6c641;
+      }
+      #es-rc #es-rc-content .es-cross__single--3 {
+        color: #fff;
+        background-color: #e25d5f;
+      }
+      #es-rc #es-rc-content .es-cross__single-title {
+        font-weight: 700;
+        font-size: 20px;
+        text-align: center;
+      }
+      #es-rc #es-rc-content .es-cross__single-title--blue {
+        color: #002349;
+      }
+      #es-rc #es-rc-content .es-cross__single-description {
+        font-weight: 400;
+        font-size: 20px;
+        text-align: center;
+      }
+      #es-rc #es-rc-content .es-cross__single-description--blue {
+        color: #002349;
+      }
+      #es-rc #es-rc-content .es-cross__img {
+        max-width: 55%;
+        margin-bottom: 15px;
+        width: auto;
+      }
+      #es-rc #es-rc-content .es-footer {
+        position: relative;
+        overflow: hidden;
+        padding: 30px 15px 0;
+        background-position: center;
+        min-height: 400px;
+      }
+      #es-rc #es-rc-content .es-footer .es-section-title {
+        text-transform: none;
+      }
+      #es-rc #es-rc-content .es-footer__hashtag {
+        padding-top: 20px;
+        margin-top: 0;
+        font-size: 25px;
+        color: #fff;
+        position: relative;
+        z-index: 3;
+      }
+      #es-rc #es-rc-content .es-footer__hashtag--last {
+        text-transform: none;
+      }
+      #es-rc #es-rc-content .es-footer__subtitle {
+        font-size: 14px;
+        color: #fff;
+        font-weight: 400;
+        position: relative;
+        z-index: 3;
+      }
+      #es-rc #es-rc-content .es-footer__inner {
+        margin-top: -50px;
+      }
+      #es-rc #es-rc-content .es-footer__inner::before {
+        content: "";
+        position: absolute;
+        width: 140%;
+        height: 400px;
+        background-color: #002349;
+        border-radius: 50%;
+        bottom: -30%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      #es-rc #es-rc-content .es-footer__logo-wrapper {
+        background-color: #002349;
+        padding-bottom: 10px;
+      }
+      @media screen and (min-width: 400px) {
+        #es-rc #es-rc-content .es-footer {
+          min-height: 420px;
+        }
+      }
+      @media screen and (min-width: 430px) {
+        #es-rc #es-rc-content .es-footer {
+          padding: 30px 15px 25px;
+        }
+      }
+      @media screen and (min-width: 470px) {
+        #es-rc #es-rc-content .es-footer {
+          min-height: 450px;
+        }
+      }
+      @media screen and (min-width: 550px) {
+        #es-rc #es-rc-content .es-style__img {
+          max-width: 80%;
+        }
+        #es-rc #es-rc-content .es-style__wrapper {
+          right: -155px;
+        }
+        #es-rc #es-rc-content .es-style__title-img {
+          margin-top: 36px;
+        }
+        #es-rc #es-rc-content .es-style__img {
+          margin-left: -5px;
+        }
+      }
+      @media screen and (min-width: 600px) {
+        #es-rc #es-rc-content .es-footer__inner::before {
+          bottom: -25%;
+        }
+        #es-rc #es-rc-content .es-footer {
+          padding: 50px 15px 55px;
+        }
+      }
+      @media screen and (min-width: 688px) {
+        #es-rc #es-rc-content .es-kv {
+          padding-bottom: 185px;
+        }
+        #es-rc #es-rc-content .es-kv__title-circle--mobile {
+          display: none;
+        }
+        #es-rc #es-rc-content .es-kv__packshot {
+          position: absolute;
+          top: -160px;
+          right: -30.5%;
+        }
+        #es-rc #es-rc-content .es-kv__title-circle--desktop {
+          display: block;
+          position: absolute;
+          padding-top: 30px;
+          bottom: -9%;
+          left: -11%;
+          z-index: 3;
+          width: 160px;
+          height: 160px;
+          font-size: 15px;
+        }
+        #es-rc #es-rc-content .es-kv__packshot__img {
+          max-width: revert;
+          max-height: 550px;
+        }
+        #es-rc #es-rc-content .es-kv__packshot__img--mobile {
+          display: none;
+        }
+        #es-rc #es-rc-content .es-kv__packshot__img--desktop {
+          display: block;
+        }
+        #es-rc #es-rc-content .es-footer__inner::before {
+          bottom: -25%;
+        }
+        #es-rc #es-rc-content .es-footer {
+          padding: 10px 15px 55px;
+        }
+      }
+      @media screen and (min-width: 748px) {
+        #es-rc #es-rc-content .es-kv__packshot__img {
+          padding-right: 75px;
+        }
+        #es-rc #es-rc-content .es-kv__title-circle--desktop {
+          left: -10%;
+        }
+      }
+      @media screen and (min-width: 768px) {
+        #es-rc #es-rc-content .es-kv {
+          padding-bottom: 250px;
+        }
+        #es-rc #es-rc-content .es-kv__packshot {
+          position: absolute;
+          top: -190px;
+          right: -30.5%;
+        }
+        #es-rc #es-rc-content .es-style__img-title {
+          left: 55%;
+        }
+        #es-rc #es-rc-content .es-kv__title-circle span {
+          padding-top: 15px;
+        }
+        #es-rc #es-rc-content .es-kv__title-circle {
+          position: absolute;
+          bottom: -2.4%;
+          right: 83.3%;
+          z-index: 3;
+        }
+        #es-rc #es-rc-content .es-kv__packshot__img {
+          padding-right: 0px;
+          max-width: revert;
+          max-height: 675px;
+        }
+        #es-rc #es-rc-content .es-kv__packshot__img--mobile {
+          display: none;
+        }
+        #es-rc #es-rc-content .es-kv__packshot__img--desktop {
+          display: block;
+        }
+        #es-rc #es-rc-content .es-style__img {
+          margin-left: -35px;
+        }
+        #es-rc #es-rc-content .es-design {
+          background-color: #faf8f8;
+          padding-right: 0;
+          padding-left: 0;
+        }
+        #es-rc #es-rc-content .es-design__title,
+        #es-rc #es-rc-content .es-design__subtitle {
+          padding-right: 15px;
+          padding-left: 15px;
+        }
+        #es-rc #es-rc-content .es-design__container {
+          display: none;
+        }
+        #es-rc #es-rc-content .es-design__description-img--mobile {
+          display: none;
+        }
+        #es-rc #es-rc-content .es-design__description-img--desktop {
+          display: block;
+        }
+        #es-rc #es-rc-content .es-design__single {
+          max-width: 230px;
+          display: flex;
+          align-items: center;
+        }
+        #es-rc #es-rc-content .es-design__single-subtitle {
+          font-size: 14px;
+          text-align: right;
+        }
+        #es-rc #es-rc-content .es-design__single-subtitle--1 {
+          position: absolute;
+          top: 22.5%;
+          left: 5%;
+        }
+        #es-rc #es-rc-content .es-design__single-subtitle--2 {
+          position: absolute;
+          top: 26%;
+          left: 69%;
+          flex-direction: row-reverse;
+        }
+        #es-rc #es-rc-content .es-design__single-subtitle--3 {
+          position: absolute;
+          top: 34.5%;
+          left: 0.5%;
+        }
+        #es-rc #es-rc-content .es-design__single-subtitle--4 {
+          position: absolute;
+          top: 43%;
+          left: 69%;
+          flex-direction: row-reverse;
+        }
+        #es-rc #es-rc-content .es-design__single-subtitle--5 {
+          position: absolute;
+          top: 46%;
+          left: 7.5%;
+        }
+        #es-rc #es-rc-content .es-design__single-subtitle--2 p {
+          text-align: left;
+        }
+        #es-rc #es-rc-content .es-design__single-subtitle--4 p {
+          text-align: left;
+        }
+        #es-rc #es-rc-content .es-design__description-img {
+          width: 50%;
+          margin-bottom: 0px;
+        }
+        #es-rc #es-rc-content .es-design__container {
+          margin-top: 20px;
+          flex-direction: column;
+          justify-content: space-around;
+        }
+        #es-rc #es-rc-content .es-design__container--desktop {
+          display: flex;
+          margin-top: -40px;
+          row-gap: 60px;
+        }
+        #es-rc #es-rc-content .es-design__new {
+          position: relative;
+        }
+        #es-rc #es-rc-content .es-design__new-wrapper {
+          position: absolute;
+          top: 20%;
+          left: 5%;
+          transform: translate(-5%, 0%);
+          width: 33%;
+        }
+        #es-rc #es-rc-content .es-design__new-title {
+          text-align: left;
+        }
+        #es-rc #es-rc-content .es-design__new-description {
+          text-align: left;
+        }
+        #es-rc #es-rc-content .es-style__left {
+          display: flex;
+          flex-flow: row;
+          max-width: 750px;
+          margin-left: 0;
+        }
+        #es-rc #es-rc-content .es-style__inner {
+          max-width: 67%;
+          margin-left: -10px;
+        }
+        #es-rc #es-rc-content .es-style__img {
+          max-width: 516px;
+          z-index: 3;
+          position: relative;
+        }
+        #es-rc #es-rc-content .es-style__img-description {
+          padding-left: 36px;
+          max-width: 300px;
+          margin-left: -80px;
+          margin-bottom: 60px;
+          align-self: flex-end;
+          text-align: left;
+        }
+        #es-rc #es-rc-content .es-style__title-img {
+          max-width: 60%;
+        }
+        #es-rc #es-rc-content .es-style__wrapper {
+          top: 5%;
+          right: -45.5%;
+        }
+        #es-rc #es-rc-content .es-style__img-title-group {
+          margin-right: revert;
+          margin-top: -25px;
+        }
+        #es-rc #es-rc-content .es-style__img-title {
+          font-size: 21px;
+        }
+        #es-rc #es-rc-content .es-eco {
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+        #es-rc #es-rc-content .es-eco__bottom-title {
+          font-weight: 700;
+          font-size: 25px;
+          text-align: center;
+        }
+        #es-rc #es-rc-content .es-slider {
+          position: relative;
+          z-index: 0;
+        }
+        #es-rc #es-rc-content .es-slider__slide--1 {
+          position: relative;
+        }
+        #es-rc #es-rc-content .es-cross__container {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: stretch;
+          gap: 0;
+        }
+        #es-rc #es-rc-content .es-cross__single-title {
+          min-height: 45px;
+        }
+        #es-rc #es-rc-content .es-cross__single-description {
+          min-height: 175px;
+        }
+        #es-rc #es-rc-content .es-cross__single {
+          max-width: 33.3%;
+          padding-top: 40px;
+          padding-bottom: 20px;
+          row-gap: 5px;
+        }
+        #es-rc #es-rc-content .es-steps__steps__item__text {
+          font-size: 20px;
+        }
+        #es-rc #es-rc-content .es-steps__steps__item {
+          max-width: 200px;
+        }
+        #es-rc #es-rc-content .es-footer {
+          background-image: url(./images/bottles-d.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-color: #faf8f8;
+          min-height: 530px;
+        }
+        #es-rc #es-rc-content .es-footer__inner {
+          margin-top: 150px;
+          max-width: 85%;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        #es-rc #es-rc-content .es-footer__inner::before {
+          display: none;
+        }
+        #es-rc #es-rc-content .es-footer__bottles {
+          display: none;
+        }
+        #es-rc #es-rc-content .es-footer {
+          padding: 150px 15px 55px;
+        }
+
+        #es-rc #es-rc-content .es-design__new-title {
+          font-size: 25px;
+        }
+        #es-rc #es-rc-content .es-design__new-description {
+          font-size: 19px;
+        }
+      }
+      @media screen and (min-width: 800px) {
+        #es-rc #es-rc-content .es-kv {
+          padding-bottom: 135px;
+        }
+        #es-rc #es-rc-content .es-kv__title--headline {
+          margin-bottom: 50px;
+          font-size: 50px;
+        }
+        #es-rc #es-rc-content .es-kv__title--bottomline {
+          font-size: 20px;
+        }
+        #es-rc #es-rc-content .es-kv__packshot {
+          right: -23.5%;
+        }
+        #es-rc #es-rc-content .es-kv__title-circle {
+          bottom: -3%;
+          right: revert;
+          left: -54px;
+        }
+        #es-rc #es-rc-content .es-design__container--desktop {
+          row-gap: 88px;
+        }
+        #es-rc #es-rc-content .es-design__single-subtitle--1 {
+          position: absolute;
+          top: 21.5%;
+          left: 8%;
+        }
+        #es-rc #es-rc-content .es-design__single-subtitle--2 {
+          position: absolute;
+          top: 26%;
+          left: 69%;
+          flex-direction: row-reverse;
+        }
+        #es-rc #es-rc-content .es-design__single-subtitle--3 {
+          position: absolute;
+          top: 34.5%;
+          left: 1%;
+        }
+        #es-rc #es-rc-content .es-design__single-subtitle--4 {
+          position: absolute;
+          top: 43%;
+          left: 69%;
+          flex-direction: row-reverse;
+        }
+        #es-rc #es-rc-content .es-design__single-subtitle--5 {
+          position: absolute;
+          top: 46.5%;
+          left: 10%;
+        }
+      }
+      @media screen and (min-width: 825px) {
+        #es-rc #es-rc-content .es-design__single-subtitle--1 {
+          position: absolute;
+          top: 21.5%;
+          left: 7%;
+        }
+        #es-rc #es-rc-content .es-design__single-subtitle--2 {
+          position: absolute;
+          top: 25.5%;
+          left: 70%;
+          flex-direction: row-reverse;
+        }
+        #es-rc #es-rc-content .es-design__single-subtitle--3 {
+          position: absolute;
+          top: 33.5%;
+          left: 2%;
+        }
+
+        #es-rc #es-rc-content .es-design__single-subtitle--4 {
+          position: absolute;
+          top: 41.5%;
+          left: 70%;
+          flex-direction: row-reverse;
+        }
+        #es-rc #es-rc-content .es-design__single-subtitle--5 {
+          position: absolute;
+          top: 46%;
+          left: 11%;
+        }
+      }
+
+      @media screen and (min-width: 850px) {
+        #es-rc #es-rc-content .es-design__single-subtitle--1 {
+          position: absolute;
+          top: 20.5%;
+          left: 8%;
+        }
+        #es-rc #es-rc-content .es-design__single-subtitle--2 {
+          position: absolute;
+          top: 24%;
+          left: 69%;
+          flex-direction: row-reverse;
+        }
+        #es-rc #es-rc-content .es-design__single-subtitle--3 {
+          position: absolute;
+          top: 32.5%;
+          left: 3%;
+        }
+        #es-rc #es-rc-content .es-design__single-subtitle--4 {
+          position: absolute;
+          top: 41%;
+          left: 70%;
+          flex-direction: row-reverse;
+        }
+        #es-rc #es-rc-content .es-design__single-subtitle--5 {
+          position: absolute;
+          top: 45%;
+          left: 12%;
+        }
+      }
+      @media screen and (min-width: 900px) {
+        #es-rc #es-rc-content .es-design__single-subtitle--1 {
+          position: absolute;
+          top: 19.5%;
+          left: 10%;
+        }
+        #es-rc #es-rc-content .es-design__single-subtitle--2 {
+          position: absolute;
+          top: 23%;
+          left: 69%;
+          flex-direction: row-reverse;
+        }
+        #es-rc #es-rc-content .es-design__single-subtitle--3 {
+          position: absolute;
+          top: 31.5%;
+          left: 4%;
+        }
+        #es-rc #es-rc-content .es-design__single-subtitle--4 {
+          position: absolute;
+          top: 41%;
+          left: 69.5%;
+          flex-direction: row-reverse;
+        }
+        #es-rc #es-rc-content .es-design__single-subtitle--5 {
+          position: absolute;
+          top: 44;
+          left: 12%;
+        }
+      }
+      @media screen and (min-width: 950px) {
+        #es-rc #es-rc-content .es-design__single-subtitle--1 {
+          position: absolute;
+          top: 18.5%;
+          left: 12%;
+        }
+        #es-rc #es-rc-content .es-design__single-subtitle--2 {
+          position: absolute;
+          top: 21.5%;
+          left: 68%;
+          flex-direction: row-reverse;
+        }
+        #es-rc #es-rc-content .es-design__single-subtitle--3 {
+          position: absolute;
+          top: 31.5%;
+          left: 5%;
+        }
+        #es-rc #es-rc-content .es-design__single-subtitle--4 {
+          position: absolute;
+          top: 41%;
+          left: 69%;
+          flex-direction: row-reverse;
+        }
+        #es-rc #es-rc-content .es-design__single-subtitle--5 {
+          position: absolute;
+          top: 44%;
+          left: 14%;
+        }
+      }
+
+      @media screen and (min-width: 980px) {
+        #es-rc #es-rc-content .es-design__single-subtitle--1 {
+          position: absolute;
+          top: 18%;
+          left: 12%;
+        }
+        #es-rc #es-rc-content .es-design__single-subtitle--2 {
+          position: absolute;
+          top: 22%;
+          left: 70%;
+          flex-direction: row-reverse;
+        }
+        #es-rc #es-rc-content .es-design__single-subtitle--3 {
+          position: absolute;
+          top: 30.5%;
+          left: 5.5%;
+        }
+        #es-rc #es-rc-content .es-design__single-subtitle--4 {
+          position: absolute;
+          top: 39%;
+          left: 70%;
+          flex-direction: row-reverse;
+        }
+        #es-rc #es-rc-content .es-design__single-subtitle--5 {
+          position: absolute;
+          top: 43%;
+          left: 15%;
+        }
+        #es-rc #es-rc-content .es-footer__hashtag {
+          font-size: 32px;
+        }
+        #es-rc #es-rc-content .es-footer {
+          padding: 300px 15px 55px;
+        }
+      }
+      @media screen and (min-width: 1050px) {
+        #es-rc #es-rc-content .es-design__single-subtitle--1 {
+          position: absolute;
+          top: 16.5%;
+          left: 16%;
+        }
+        #es-rc #es-rc-content .es-design__single-subtitle--2 {
+          position: absolute;
+          top: 20%;
+          left: 68%;
+          flex-direction: row-reverse;
+        }
+        #es-rc #es-rc-content .es-design__single-subtitle--3 {
+          position: absolute;
+          top: 29.5%;
+          left: 7.5%;
+        }
+        #es-rc #es-rc-content .es-design__single-subtitle--4 {
+          position: absolute;
+          top: 39%;
+          left: 70%;
+          flex-direction: row-reverse;
+        }
+        #es-rc #es-rc-content .es-design__single-subtitle--5 {
+          position: absolute;
+          top: 42%;
+          left: 15%;
+        }
+      }
+      @media screen and (min-width: 1100px) {
+        #es-rc #es-rc-content .es-kv {
+          position: relative;
+          padding-bottom: 165px;
+        }
+        #es-rc #es-rc-content .es-kv__title--headline {
+          margin-bottom: 25px;
+          font-size: 60px;
+        }
+        #es-rc #es-rc-content .es-kv__title--bottomline {
+          font-size: 25px;
+        }
+        #es-rc #es-rc-content .es-kv__logo {
+          max-width: 290px;
+        }
+        #es-rc #es-rc-content .es-kv__title-circle {
+          bottom: 2%;
+          left: -17%;
+          right: auto;
+          z-index: 5;
+        }
+        #es-rc #es-rc-content .es-kv__packshot {
+          position: absolute;
+          top: -160px;
+          right: -14.5%;
+        }
+        #es-rc #es-rc-content .es-kv__packshot__img {
+          max-height: 730px;
+        }
+        #es-rc #es-rc-content .es-kv__packshot__img--mobile {
+          display: none;
+        }
+        #es-rc #es-rc-content .es-kv__packshot__img--desktop {
+          left: -50px;
+          transform: scale(1.1);
+          top: -50px;
+          display: block;
+          display: block;
+        }
+        #es-rc #es-rc-content .es-kv__title {
+          text-align: left;
+          margin-top: 10px;
+          max-width: 400px;
+        }
+        #es-rc #es-rc-content .es-style__img-title {
+          left: 57%;
+        }
+        #es-rc #es-rc-content .es-cross__single-description {
+          min-height: 165px;
+        }
+        #es-rc #es-rc-content .es-cross__single-title {
+          min-height: 25px;
+        }
+        #es-rc #es-rc-content .es-design__container--desktop {
+          row-gap: 100px;
+        }
+        #es-rc #es-rc-content .es-design__single-subtitle {
+          font-size: 20px;
+        }
+        #es-rc #es-rc-content .es-design__single-subtitle--1 {
+          position: absolute;
+          top: 17%;
+          left: 10.5%;
+          text-align: right;
+        }
+        #es-rc #es-rc-content .es-design__single-subtitle--2 {
+          position: absolute;
+          top: 20%;
+          left: 69%;
+          text-align: left;
+        }
+        #es-rc #es-rc-content .es-design__single-subtitle--3 {
+          position: absolute;
+          top: 30%;
+          left: 4.5%;
+          text-align: right;
+        }
+        #es-rc #es-rc-content .es-design__single-subtitle--4 {
+          position: absolute;
+          top: 39%;
+          left: 71%;
+          text-align: left;
+        }
+        #es-rc #es-rc-content .es-design__single-subtitle--5 {
+          position: absolute;
+          top: 43%;
+          left: 14%;
+          text-align: right;
+        }
+        #es-rc #es-rc-content .es-design__description-img {
+          margin-bottom: 0px;
+        }
+        #es-rc #es-rc-content .es-kv__description-title,
+        #es-rc #es-rc-content .es-design__title,
+        #es-rc #es-rc-content .es-steps__title,
+        #es-rc #es-rc-content .es-eco__bottom-title,
+        #es-rc #es-rc-content .es-footer__hashtag {
+          font-size: 32px;
+        }
+        #es-rc #es-rc-content .es-eco__subtitle {
+          margin-bottom: 30px;
+        }
+        #es-rc #es-rc-content .es-steps__steps__item {
+          max-width: 285px;
+        }
+        #es-rc #es-rc-content .es-easy-mix__title {
+          font-size: 32px;
+        }
+        #es-rc #es-rc-content .es-easy-mix__container {
+          display: flex;
+          -moz-column-gap: 50px;
+          column-gap: 50px;
+        }
+        #es-rc #es-rc-content .es-easy-mix__description {
+          text-align: left;
+        }
+        #es-rc #es-rc-content .es-easy-mix__right,
+        #es-rc #es-rc-content .es-easy-mix__left {
+          width: 50%;
+        }
+        #es-rc #es-rc-content .es-comfort__left-title {
+          font-size: 32px;
+        }
+        #es-rc #es-rc-content .es-comfort__container {
+          display: flex;
+          -moz-column-gap: 50px;
+          column-gap: 50px;
+          align-items: center;
+        }
+        #es-rc #es-rc-content .es-comfort__right,
+        #es-rc #es-rc-content .es-comfort__left {
+          width: 50%;
+        }
+        #es-rc #es-rc-content .es-footer {
+          min-height: 550px;
+          background-position: top;
+          padding-bottom: 46px;
+          padding: 30px 15px 55px;
+        }
+        #es-rc #es-rc-content .es-footer__inner {
+          max-width: 100%;
+          margin-top: 330px;
+          max-width: 100%;
+        }
+        #es-rc #es-rc-content .es-footer__hashtag {
+          font-size: 32px;
+          margin-bottom: 45px;
+        }
+        #es-rc #es-rc-content .es-footer__subtitle {
+          max-width: 90%;
+          margin: 0 auto;
+        }
+        #es-rc #es-rc-content .es-style__inner {
+          max-width: 67%;
+        }
+        #es-rc #es-rc-content .es-style__left {
+          max-width: revert;
+        }
+        #es-rc #es-rc-content .es-style__img {
+          z-index: 3;
+          position: relative;
+          min-width: 100%;
+          max-width: 100%;
+        }
+        #es-rc #es-rc-content .es-style__img-title {
+          font-size: 30px;
+        }
+        #es-rc #es-rc-content .es-style__title-img {
+          max-width: 82%;
+        }
+        #es-rc #es-rc-content .es-style__img-description span {
+          font-size: 30px;
+        }
+        #es-rc #es-rc-content .es-style__wrapper {
+          right: -40%;
+          top: 7%;
+        }
+        #es-rc #es-rc-content .es-style__img-title-group {
+          margin-right: revert;
+        }
+        #es-rc #es-rc-content .es-style__img-description {
+          padding-left: 0;
+          margin-bottom: 70px;
+          margin-left: -200px;
+          font-size: 24px;
+          max-width: 365px;
+        }
+        #es-rc #es-rc-content .es-design__new-wrapper {
+          top: 26%;
+          left: 6%;
+        }
+        #es-rc #es-rc-content .es-design__new-title {
+          font-size: 36px;
+        }
+        #es-rc #es-rc-content .es-design__new-description {
+          max-width: 355px;
+        }
+        #es-rc #es-rc-content .es-steps__steps__item__text {
+          font-size: 20px;
+        }
+      }
+    </style>
   </head>
   <body>
     <div id="es-rc">
@@ -19,7 +1423,7 @@
               />
               <div class="es-kv__title">
                 <p class="es-kv__title--headline">
-                  <span>fizz & go<sup class="es-tm-headline">™</sup></span>
+                  <span>fizz&go<sup class="es-tm-headline">™</sup></span>
                 </p>
                 <p class="es-kv__title--bottomline">
                   butelka termiczna<br />
@@ -59,10 +1463,10 @@
                 sobą!
               </p>
               <p class="es-kv__description__text">
-                Butelka Sodastream® fizz & go™ – w zachwycającym, pomarańczowym
-                kolorze dotrzyma Ci tempa od rana do wieczora. Łączy 3
-                praktyczne funkcje w jednym – jest jednocześnie butelką do
-                saturatora, termosem na zimne i ciepłe napoje oraz bidonem na
+                Butelka Sodastream<sup>®</sup> fizz&go™ – w zachwycającym,
+                pomarańczowym kolorze dotrzyma Ci tempa od rana do wieczora.
+                Łączy 3 praktyczne funkcje w jednym – jest jednocześnie butelką
+                do saturatora, termosem na zimne i ciepłe napoje oraz bidonem na
                 wodę. Dodatkowo, dzięki specjalnej konstrukcji, utrzyma chłodną
                 temperaturę napoju aż do 12 godzin. To Twój nowy kompan
                 codzienności – idealny na wycieczkę, do pracy czy spacer po
@@ -102,17 +1506,17 @@
 
         <div class="es-design">
           <p class="es-design__title">
-            pełen energii kolor, w parze z funkcjonalnością
+            pełen energii kolor, który idzie w parze z funkcjonalnością
           </p>
           <p class="es-design__subtitle">
-            Pomarańczowa butelka Sodastream® fizz & go™ została stworzona z
-            myślą o aktywnym stylu życia. Wykonana z wysokiej jakości stali
-            nierdzewnej jest odporna na uszkodzenia i korozję, dzięki czemu
-            doskonale sprawdza się nawet gdy Twój dzień jest bardzo intensywny.
-            Szczelna konstrukcja chroni przed przeciekaniem i utratą bąbelków
-            oraz utrzymuje chłód napojów nawet do 12 godzin. Dla pełnej wygody
-            butelkę możesz bezpiecznie umyć w zmywarce – by zawsze była gotowa
-            na kolejny dzień.
+            Pomarańczowa butelka Sodastream<sup>®</sup> fizz&go™ została
+            stworzona z myślą o aktywnym stylu życia. Wykonana z wysokiej
+            jakości stali nierdzewnej jest odporna na uszkodzenia i korozję,
+            dzięki czemu doskonale sprawdza się nawet gdy Twój dzień jest bardzo
+            intensywny. Szczelna konstrukcja chroni przed przeciekaniem i utratą
+            bąbelków oraz utrzymuje chłód napojów nawet do 12 godzin. Dla pełnej
+            wygody butelkę możesz bezpiecznie umyć w zmywarce – by zawsze była
+            gotowa na kolejny dzień.
           </p>
 
           <div class="es-design__inner">
@@ -129,7 +1533,7 @@
             <div class="es-design__container es-design__container--desktop">
               <div class="es-design__single es-design__single-subtitle--1">
                 <p class="es-design__single-subtitle">
-                  Idealnie schłodzone napoje do 12 godzin
+                  Idealnie&nbsp;schłodzone<br />napoje&nbsp;do 12&nbsp;godzin
                 </p>
                 <img
                   src="./images/icon-1.png"
@@ -139,7 +1543,7 @@
               </div>
               <div class="es-design__single es-design__single-subtitle--2">
                 <p class="es-design__single-subtitle">
-                  Szczelny korek i hermetyczna konstrukcja
+                  Szczelny&nbsp;korek<br />i&nbsp;hermetyczna<br />konstrukcja
                 </p>
                 <img
                   src="./images/icon-2.png"
@@ -148,7 +1552,9 @@
                 />
               </div>
               <div class="es-design__single es-design__single-subtitle--3">
-                <p class="es-design__single-subtitle">Materiał wolny od BPA</p>
+                <p class="es-design__single-subtitle">
+                  Materiał<br />wolny&nbsp;od&nbsp;BPA
+                </p>
                 <img
                   src="./images/icon-3.png"
                   alt="Szczelny korek"
@@ -157,7 +1563,7 @@
               </div>
               <div class="es-design__single es-design__single-subtitle--4">
                 <p class="es-design__single-subtitle">
-                  Przystosowana<br />do mycia<br />w zmywarce
+                  Przystosowana<br />do&nbsp;mycia<br />w&nbsp;zmywarce
                 </p>
                 <img
                   src="./images/icon-4.png"
@@ -230,11 +1636,13 @@
 
           <div class="es-design__new">
             <div class="es-design__new-wrapper">
-              <p class="es-design__new-title">postaw na nowe eko-nawyki</p>
+              <p class="es-design__new-title">
+                postaw na nowe <span class="es-design__nowrap">eko-nawyki</span>
+              </p>
               <p class="es-design__new-description">
                 Zostań częścią drużyny Sodastream i zmieniaj codzienne nawyki na
-                lepsze! Z butelką Sodastream® fizz & go™ w prosty sposób
-                zastąpisz jednorazowe butelki i kubki wielorazowym
+                lepsze! Z butelką Sodastream<sup>®</sup> fizz&go™ w prosty
+                sposób zastąpisz jednorazowe butelki i kubki wielorazowym
                 rozwiązaniem.<br /><br />
                 Wybierając wielofunkcyjny model 3 w 1, zawsze masz pod ręką to,
                 czego potrzebujesz, a przy tym działasz bardziej świadomie i z
@@ -265,8 +1673,8 @@
                         alt="gazuj"
                       />
                       <p class="es-steps__steps__item__text">
-                        Wlej wodę z kranu do butelki Sodastream® fizz & go™, a
-                        następnie zamontuj w saturatorze.
+                        Wlej wodę z kranu do butelki Sodastream<sup>®</sup> fizz
+                        & go™, a następnie zamontuj w saturatorze.
                       </p>
                     </div>
                     <div class="es-steps__steps__item">
@@ -288,7 +1696,8 @@
                       />
                       <p class="es-steps__steps__item__text">
                         Jeśli masz ochotę na napój smakowy, dodaj ulubiony syrop
-                        Sodastream® lub inne dodatki. Lekko wstrząśnij i gotowe!
+                        Sodastream<sup>®</sup> lub inne dodatki. Lekko
+                        wstrząśnij i gotowe!
                       </p>
                     </div>
                   </div>
@@ -300,40 +1709,43 @@
 
         <div class="es-easy-mix">
           <p class="es-easy-mix__title">
-            Sodastream<sup>®</sup> fizz & go™ – dowiedz się więcej o butelce do
+            Sodastream<sup>®</sup> fizz&go™ – dowiedz się więcej o butelce do
             zadań specjalnych
           </p>
           <div class="es-easy-mix__container">
             <div class="es-easy-mix__left">
               <img
                 src="./images/easy-mix.png"
-                alt="Termiczna butelka Sodastream Fizz & Go™ Easy Mix"
+                alt="Termiczna butelka Sodastream fizz&go™ Easy Mix"
                 class="es-easy-mix__img"
               />
             </div>
             <div class="es-easy-mix__right">
               <p class="es-easy-mix__description">
                 <b
-                  >Do jakich saturatorów Sodastream® pasuje butelka Sodastream
-                  fizz & go™?</b
+                  >Do jakich saturatorów Sodastream<sup>®</sup> pasuje butelka
+                  Sodastream fizz&go™?</b
                 ><br />
-                To uniwersalna butelka, która pasuje do modeli Sodastream®
+                To uniwersalna butelka, która pasuje do modeli Sodastream<sup
+                  >®</sup
+                >
                 Terra, Duo, Art, Mix i Ensō. Nagazuj w niej wodę i zabierz ze
                 sobą w drogę.
 
                 <br /><br />
-                <b>Czy butelkę Sodastream® fizz & go™ trzeba myć ręcznie?</b
-                ><br />
-                Nie! Bidon na wodę Sodastream® fizz & go™ bez problemu możesz
-                umieścić w zmywarce, by umyć go dokładnie, bezpiecznie i bez
-                wysiłku.
-                <br /><br />
                 <b
-                  >Czy do butelki Sodastream® fizz & go™ można wlać kawę lub
-                  herbatę?</b
+                  >Czy butelkę Sodastream<sup>®</sup> fizz&go™ trzeba myć
+                  ręcznie?</b
                 ><br />
-                Tak, w wielorazowej butelce termicznej Sodastream® fizz & go™
-                możesz przechowywać również ciepłe napoje*.<br /><br />
+                Nie! Bidon na wodę Sodastream<sup>®</sup> fizz&go™ bez problemu
+                możesz umieścić w zmywarce, by umyć go dokładnie, bezpiecznie i
+                bez wysiłku. <br /><br />
+                <b
+                  >Czy do butelki Sodastream<sup>®</sup> fizz&go™ można wlać
+                  kawę lub herbatę?</b
+                ><br />
+                Tak, w wielorazowej butelce termicznej Sodastream<sup>®</sup>
+                fizz & go™ możesz przechowywać również ciepłe napoje*.<br /><br />
                 *UWAGA! Nie nasycaj gazem wody o temperaturze powyżej 45°C.
                 Zachowaj szczególną ostrożność podczas przechowywania gorących
                 płynów w butelce i otwierania butelki zawierającej gorące płyny.
@@ -344,7 +1756,7 @@
 
         <div class="es-comfort">
           <p class="es-comfort__left-title">
-            Sodastream® fizz & go™ - zawsze w twoim rytmie
+            Sodastream<sup>®</sup> fizz&go™ - zawsze w twoim rytmie
           </p>
           <div class="es-comfort__container">
             <div class="es-comfort__left">
@@ -353,34 +1765,32 @@
                   >Lubisz, gdy dużo się dzieje i każdy dzień przynosi coś
                   nowego?</b
                 ><br />
-                Pomarańczowa butelka Sodastream® fizz & go™ dotrzyma Ci kroku
-                podczas porannego joggingu, w drodze na ulubione zajęcia czy
-                podczas weekendowego wypadu za miasto. Jest wytrzymała i gotowa
-                na każde wyzwanie, dlatego zawsze możesz na nią liczyć – w
-                trakcie intensywnej aktywności i na co dzień.
-                <br /><br />
+                Pomarańczowa butelka Sodastream<sup>®</sup> fizz&go™ dotrzyma Ci
+                kroku podczas porannego joggingu, w drodze na ulubione zajęcia
+                czy podczas weekendowego wypadu za miasto. Jest wytrzymała i
+                gotowa na każde wyzwanie, dlatego zawsze możesz na nią liczyć –
+                w trakcie intensywnej aktywności i na co dzień. <br /><br />
                 <b>działaj bez ograniczeń</b><br />
                 Lubisz praktyczne rozwiązania, z którymi nic Cię nie ogranicza?
-                Bidon Sodastream® fizz & go™ dzięki szczelnej konstrukcji możesz
-                bezpiecznie nosić w plecaku lub torbie – bez obaw o
-                przeciekanie. Dodatkowo – butelka oszczędza Twój czas na co
-                dzień – wystarczy włożyć ją do zmywarki byś mógł z niej
-                korzystać kolejnego dnia.
-                <br /><br />
+                Bidon Sodastream<sup>®</sup> fizz&go™, dzięki szczelnej
+                konstrukcji, możesz bezpiecznie nosić w plecaku lub torbie – bez
+                obaw o przeciekanie. Dodatkowo – butelka oszczędza Twój czas na
+                co dzień – wystarczy włożyć ją do zmywarki byś mógł z niej
+                korzystać kolejnego dnia. <br /><br />
                 <b>ruszaj w drogę</b><br />
                 Często jesteś w trasie i lubisz mieć wszystko pod kontrolą?
-                Termiczna butelka Sodastream® fizz & go™ idealnie odnajduje się
-                w podróży – pasuje do uchwytów samochodowych i bez problemu
-                znosi codzienne wyzwania. Dzięki temu Twój ulubiony napój –
-                ciepły lub zimny – będzie pod ręką, zawsze gdy go potrzebujesz.
-                <br /><br />
+                Termiczna butelka Sodastream<sup>®</sup> fizz&go™ idealnie
+                odnajduje się w podróży – pasuje do uchwytów samochodowych i bez
+                problemu znosi codzienne wyzwania. Dzięki temu Twój ulubiony
+                napój – ciepły lub zimny – będzie pod ręką, zawsze gdy go
+                potrzebujesz. <br /><br />
                 <b>podaruj stylowy upominek</b><br />
                 Potrzebujesz oryginalnego prezentu dla bliskiej osoby? Butelka
-                Sodastream® fizz & go™ to stylowy i praktyczny upominek - który
-                docenią szczególnie gadżeciarze i aktywne osoby, które zawsze są
-                gotowe na coś nowego. Dodatkowo nowoczesny design i wyrazisty
-                kolor sprawiają, że z pewnością przypadnie do gustu obdarowanej
-                osobie.
+                Sodastream<sup>®</sup> fizz&go™ to stylowy i praktyczny upominek
+                - który docenią szczególnie gadżeciarze i aktywne osoby, które
+                zawsze są gotowe na coś nowego. Dodatkowo nowoczesny design i
+                wyrazisty kolor sprawiają, że z pewnością przypadnie do gustu
+                obdarowanej osobie.
               </p>
             </div>
             <div class="es-comfort__right">
@@ -411,10 +1821,13 @@
                 popularne smaki w domowej wersji<br />
               </p>
               <p class="es-cross__single-description">
-                Sodastream® o smaku Pepsi®, Mirindy® czy MTN Dew® to klasyki,
-                które wprawią Cię w dobry nastrój. Przygotuj na ich bazie pyszne
-                napoje z bąbelkami i zobacz, jak szybko zwykłe spotkanie może
-                zmienić się w coś wyjątkowego!
+                Sodastream<sup>®</sup> o smaku Pepsi<sup>®</sup>, Mirindy<sup
+                  >®</sup
+                >
+                czy MTN Dew<sup>®</sup> to klasyki, które wprawią Cię w dobry
+                nastrój. Przygotuj na ich bazie pyszne napoje z bąbelkami i
+                zobacz, jak szybko zwykłe spotkanie może zmienić się w coś
+                wyjątkowego!
               </p>
             </div>
 
@@ -447,10 +1860,10 @@
                 eksplozja owocowych możliwości
               </p>
               <p class="es-cross__single-description">
-                Twórz efektowne napoje na bazie syropów Sodastream® o smakach
-                Malinowym, Różowego Grejpfruta czy Marakui - to prosty sposób na
-                tworzenie kolorowych kompozycji, które wyglądają jak z modnej
-                restauracji.
+                Twórz efektowne napoje na bazie syropów Sodastream<sup>®</sup> o
+                smakach Malinowym, Różowego Grejpfruta czy Marakui - to prosty
+                sposób na tworzenie kolorowych kompozycji, które wyglądają jak z
+                modnej restauracji.
               </p>
             </div>
           </div>
@@ -468,8 +1881,8 @@
             </p>
             <p class="es-section-title es-footer__subtitle">
               Każdy odcień to inna energia! Poznaj pełną gamę zachwycających
-              butelek Sodastream® fizz & go™ i znajdź swoje ulubione kolory.
-              Wybierz jeden z nich lub stwórz własną kolekcję, z którą
+              butelek Sodastream<sup>®</sup> fizz&go™ i znajdź swoje ulubione
+              kolory. Wybierz jeden z nich lub stwórz własną kolekcję, z którą
               dopasujesz odcień do swojej stylizacji.
             </p>
           </div>
